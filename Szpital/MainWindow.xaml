@@ -17,7 +17,6 @@
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
-
         </Button>
         <Button x:Name="pielegniarki" Content="PIELĘGNIARKI" HorizontalAlignment="Left" Height="125" Margin="468,237,0,0" VerticalAlignment="Top" Width="250" FontSize="36" FontWeight="Bold" Foreground="#FFC5C5C5" Background="#FF884040" Click="OpenPielegniarki">
             <Button.Effect>
