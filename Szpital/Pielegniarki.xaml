@@ -7,6 +7,46 @@
         mc:Ignorable="d"
         Title="Pielegniarki" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="insert" Content="INSERT" HorizontalAlignment="Left" Height="50" Margin="475,81,0,0" VerticalAlignment="Top" Width="145" FontSize="24" FontWeight="Bold" Foreground="#FFC5C5C5" Background="#FF884040" Click="Insert">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+
+        </Button>
+        <Button x:Name="update" Content="UPDATE" HorizontalAlignment="Left" Height="50" Margin="632,81,0,0" VerticalAlignment="Top" Width="145" FontSize="24" FontWeight="Bold" Foreground="#FFC5C5C5" Background="#FF884040" Click="Update">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+
+        </Button>
+        <Label Content="PIELĘGNIARKI" HorizontalAlignment="Left" Height="68" Margin="528,10,0,0" VerticalAlignment="Top" Width="249" Foreground="#FF884040" FontSize="36" FontWeight="Bold" FontStyle="Normal"/>
+        <Label Content="IMIĘ" HorizontalAlignment="Left" Height="33" Margin="10,87,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF884040" FontSize="18" FontWeight="Bold" FontStyle="Normal"/>
+        <Label Content="NAZWISKO" HorizontalAlignment="Left" Height="33" Margin="10,126,0,0" VerticalAlignment="Top" Width="107" Foreground="#FF884040" FontSize="18" FontWeight="Bold" FontStyle="Normal"/>
+        <Label Content="TELEFON" HorizontalAlignment="Left" Height="34" Margin="10,164,0,0" VerticalAlignment="Top" Width="107" Foreground="#FF884040" FontSize="18" FontWeight="Bold" FontStyle="Normal"/>
+        <TextBox x:Name="imie_txt" HorizontalAlignment="Left" Height="33" Margin="186,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" Foreground="#FFD6CECE" Background="#FFA76868" BorderBrush="#FF7B3232" FontSize="16" SelectionBrush="Black"/>
+        <TextBox x:Name="nazwisko_txt" HorizontalAlignment="Left" Height="33" Margin="186,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" Foreground="#FFD6CECE" Background="#FFA76868" BorderBrush="#FF7B3232" FontSize="16" SelectionBrush="Black"/>
+        <TextBox x:Name="tel_txt" HorizontalAlignment="Left" Height="34" Margin="186,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" Foreground="#FFD6CECE" Background="#FFA76868" BorderBrush="#FF7B3232" FontSize="16" SelectionBrush="Black"/>
+        <Button x:Name="delete" Content="DELETE" HorizontalAlignment="Left" Height="51" Margin="632,144,0,0" VerticalAlignment="Top" Width="145" FontSize="24" FontWeight="Bold" Foreground="#FFC5C5C5" Background="#FF884040" Click="Delete">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+
+        </Button>
+        <Button x:Name="clear" Content="CLEAR" HorizontalAlignment="Left" Height="51" Margin="475,144,0,0" VerticalAlignment="Top" Width="145" FontSize="24" FontWeight="Bold" Foreground="#FFC5C5C5" Background="#FF884040" Click="Clear">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+
+        </Button>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Center" Margin="0,261,0,10" Width="780" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged" Background="#FFD6CECE" BorderBrush="#FF7B3232"/>
+        <Button x:Name="menu" Content="MENU" HorizontalAlignment="Left" Height="42" Margin="10,10,0,0" VerticalAlignment="Top" Width="86" FontSize="24" FontWeight="Bold" Foreground="#FFC5C5C5" Background="#FF884040" Click="Menu">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+
+        </Button>
+        <Label Content="ID" HorizontalAlignment="Left" Height="34" Margin="632,203,0,0" VerticalAlignment="Top" Width="71" Foreground="#FF884040" FontSize="18" FontWeight="Bold" FontStyle="Normal"/>
+        <TextBox x:Name="id_txt" HorizontalAlignment="Left" Height="34" Margin="708,203,0,0" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" Width="69" Foreground="#FFD6CECE" Background="#FFA76868" BorderBrush="#FF7B3232" FontSize="16" SelectionBrush="Black"/>
+
     </Grid>
 </Window>
